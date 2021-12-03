@@ -14,7 +14,7 @@ jobs:
 
       - name: Build
         run: docker build -t sageroom/nextcloud:23.0.0-apache .
-      - name: Login to GAR
+      - name: Login to Dockerhub
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}

@@ -1,7 +1,7 @@
 FROM nextcloud:23.0.0-apache
 
 RUN apt-get update && apt-get install -y \
-    supervisor \
+    supervisor postgresql-client \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir /var/log/supervisord /var/run/supervisord
 

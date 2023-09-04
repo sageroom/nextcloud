@@ -1,4 +1,5 @@
-FROM nextcloud:24.0.12-apache
+FROM nextcloud:25.0.10-apache
+
 
 RUN apt-get update && apt-get install -y \
     supervisor postgresql-client \

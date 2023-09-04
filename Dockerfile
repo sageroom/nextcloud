@@ -1,4 +1,4 @@
-FROM nextcloud:25.0.10-apache
+FROM nextcloud:26.0.5-apache
 
 
 RUN apt-get update && apt-get install -y \
